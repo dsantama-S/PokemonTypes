@@ -62,6 +62,15 @@ public class Pokémon {
             default:
                 break;
         }
+        else
+        {
+            agua /= 2;
+            acero /= 2;
+            electrico *= 2;
+            fuego /= 2;
+            hielo /= 2;
+            planta *= 2;
+        }
     }
     public void Fuego(String ataque)
     {
@@ -106,6 +115,18 @@ public class Pokémon {
             default:
                 break;
         }
+        else
+        {
+            agua *= 2;
+            acero /= 2;
+            bicho /= 2;
+            hada /= 2;
+            hielo /= 2;
+            fuego /= 2;
+            planta /= 2;
+            roca *= 2;
+            tierra *= 2;
+        }
     }
     
     public void Fantasma(String ataque)
@@ -134,6 +155,14 @@ public class Pokémon {
                 break;
             default:
                 break;
+        }
+        else
+        {
+            veneno /= 2;
+            fantasma *= 2;
+            siniestro *= 2;
+            lucha *= 0;
+            normal *= 0;
         }
     }
     public void Veneno(String ataque)
@@ -173,6 +202,16 @@ public class Pokémon {
             default:
                 break;
         }
+        else
+        {
+            lucha /= 2;
+            psiquico *= 2;
+            bicho /= 2;
+            hada /= 2;
+            planta /= 2;
+            veneno /= 2;
+            tierra *= 2;
+        }
     }
     public void Normal(String ataque)
     {
@@ -188,6 +227,11 @@ public class Pokémon {
                 break;
             default:
                 break;
+        }
+        else
+        {
+            fantasma *= 0;
+            lucha *= 2;
         }
     }
     public void Hielo(String ataque)
@@ -216,6 +260,14 @@ public class Pokémon {
                 break;
             default:
                 break;
+        }
+        else
+        {
+            fuego *= 2;
+            acero *= 2;
+            lucha *= 2;
+            hielo /= 2;
+            roca *= 2;
         }
     }
     public void Tierra(String ataque)
@@ -250,6 +302,15 @@ public class Pokémon {
                 break;
             default:
                 break;
+        }
+        else
+        {
+            agua *= 2;
+            hielo *= 2;
+            electrico *= 0;
+            planta *= 2;
+            roca /= 2;
+            veneno /= 2;
         }
     }
     public void Roca(String ataque)
@@ -295,6 +356,18 @@ public class Pokémon {
             default:
                 break;
         }
+        else
+        {
+            agua *= 2;
+            acero *= 2;
+            lucha *= 2;
+            fuego /= 2;
+            normal /= 2;
+            planta *= 2;
+            tierra *= 2;
+            veneno /= 2;
+            volador /= 2;
+        }
     }
     public void Lucha(String ataque)
     {
@@ -329,6 +402,15 @@ public class Pokémon {
             default:
                 break;
         }
+        else
+        {
+            psiquico *= 2;
+            bicho /= 2;
+            hada *= 2;
+            siniestro /= 2;
+            roca /= 2;
+            volador *= 2;
+        }
     }
     public void Siniestro(String ataque)
     {
@@ -362,6 +444,15 @@ public class Pokémon {
                 break;
             default:
                 break;
+        }
+        else
+        {
+            psiquico *= 0;
+            bicho *= 2;
+            hada *= 2;
+            lucha *= 2;
+            fantasma /= 2;
+            siniestro /= 2;
         }
     }
     public void Acero(String ataque)
@@ -422,7 +513,7 @@ public class Pokémon {
                 break;
             case "Lucha":
             case "lucha":
-                tierra *= 2;
+                lucha *= 2;
                 break;
             case "Fuego":
             case "fuego":
@@ -430,6 +521,22 @@ public class Pokémon {
                 break;
             default:
                 break;
+        }
+        else
+        {
+            dragon /= 2;
+            acero /= 2;
+            bicho /= 2;
+            normal /= 2;
+            hada /= 2;
+            hielo /= 2;
+            fuego *= 2;
+            planta /= 2;
+            roca /= 2;
+            lucha *= 2;
+            volador /= 2;
+            tierra *= 2;
+            veneno *= 0;
         }
     }
     public void Hada(String ataque)
@@ -464,6 +571,15 @@ public class Pokémon {
                 break;
             default:
                 break;
+        }
+                else
+        {
+            dragon *= 0;
+            acero *= 2;
+            bicho /= 2;
+            lucha /= 2;
+            siniestro /= 2;
+            veneno *= 2;
         }
     }
     public void Planta(String ataque)
@@ -511,6 +627,18 @@ public class Pokémon {
             default:
                 break;
         }
+                else
+        {
+            agua /= 2;
+            bicho *= 2;
+            electrico /= 2;
+            hielo *= 2;
+            fuego *= 2;
+            planta /= 2;
+            volador *= 2;
+            tierra /= 2;
+            veneno *= 2;
+        }
     }
     public void Bicho(String ataque)
     {
@@ -546,6 +674,16 @@ public class Pokémon {
                 break;
             default:
                 break;
+        }
+                else
+        {
+            bicho /= 2;
+            fuego *= 2;
+            planta /= 2;
+            roca *= 2;
+            lucha /= 2;
+            volador *= 2;
+            tierra /= 2;
         }
     }
     public void Volador(String ataque)
@@ -583,6 +721,16 @@ public class Pokémon {
                 tierra *= 0;
             default:
                 break;
+        }
+        else
+        {
+            tierra *= 0;
+            roca *= 2;
+            planta /= 2;
+            hielo *= 2;
+            bicho /= 2;
+            electrico *= 2;
+            lucha /= 2;
         }
     }
     public void Dragón(String ataque)
@@ -624,6 +772,16 @@ public class Pokémon {
             default:
                 break;
         }
+        else
+        {
+            agua /= 0;
+            dragon *= 2;
+            electrico /= 2;
+            fuego /= 2;
+            hada *= 2;
+            hielo *= 2;
+            planta /= 2;
+        }
     }
     public void Eléctrico(String ataque)
     {
@@ -649,6 +807,13 @@ public class Pokémon {
                 break;
             default:
                 break;
+        }
+        else
+        {
+            electrico /= 2;
+            acero /= 2;
+            volador /= 2;
+            tierra *= 2;
         }
     }
     public void Psíquico(String ataque)
@@ -679,6 +844,14 @@ public class Pokémon {
                 break;
             default:
                 break;
+        }
+        else
+        {
+            fantasma *= 2;
+            lucha /= 2;
+            siniestro *= 2;
+            bicho *= 2;
+            psiquico /= 2;
         }
     }
 }
